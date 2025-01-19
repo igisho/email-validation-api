@@ -9,8 +9,8 @@ services:
     environment:
       - TZ=Europe/Vienna
     volumes:
-      - ./config:/root/config
-      - ./logs:/root/logs
+      - eva-config:/root/config
+      - eva-logs:/root/logs
     healthcheck:
       test:
         [
@@ -31,4 +31,13 @@ services:
       driver: "json-file"
       options:
         max-size: "10m"
-        max-file: "3"
+        max-file: "3
+
+volumes:
+  eva-config:
+    external: true
+    name: eva-config  
+
+  eva-logs:
+    external: true
+    name: eva-logs  

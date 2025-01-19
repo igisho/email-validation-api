@@ -4,7 +4,6 @@
   "cache_enabled": true,
   "cache_max_time_mx": 3600,
   "cache_max_time_smtp": 3600,
-  "cache_max_time_email": 3600,
   "logging_enabled": true,
   "api_key": null,
   "requests_per_minute": 60,

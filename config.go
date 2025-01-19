@@ -13,7 +13,6 @@ type Config struct {
     CacheEnabled         bool          `json:"cache_enabled"`
     CacheMaxTimeMX       time.Duration `json:"cache_max_time_mx"`
     CacheMaxTimeSMTP     time.Duration `json:"cache_max_time_smtp"`
-    CacheMaxTimeEmail    time.Duration `json:"cache_max_time_email"`
     LoggingEnabled       bool          `json:"logging_enabled"`
     APIKey               string        `json:"api_key"`
     RequestsPerMinute    int           `json:"requests_per_minute"`
