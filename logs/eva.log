@@ -1,0 +1,45 @@
+INFO: 2025/01/19 20:35:47 logger.go:36: List updated successfully
+ERROR: 2025/01/19 20:36:02 logger.go:42: Email is denied by list for email: dfdf@00.pe
+ERROR: 2025/01/19 20:36:13 logger.go:42: No MX record found for domain: domain.tlc
+INFO: 2025/01/19 20:36:17 logger.go:36: Email is valid by list for email: allow@domain.tld
+ERROR: 2025/01/19 20:36:23 logger.go:42: Email is denied by list for email: deny@domain.tld
+ERROR: 2025/01/19 20:36:30 logger.go:42: Email is denied by list for email: deny@domain.tld
+ERROR: 2025/01/19 20:36:30 logger.go:42: Email is denied by list for email: deny@domain.tld
+ERROR: 2025/01/19 20:36:30 logger.go:42: IP banned: ::1
+ERROR: 2025/01/19 20:36:31 logger.go:42: IP banned: ::1
+ERROR: 2025/01/19 20:36:33 logger.go:42: IP banned: ::1
+ERROR: 2025/01/19 20:36:38 logger.go:42: IP banned: ::1
+ERROR: 2025/01/19 20:37:53 logger.go:42: IP banned: ::1
+ERROR: 2025/01/19 20:37:54 logger.go:42: IP banned: ::1
+ERROR: 2025/01/19 20:37:55 logger.go:42: IP banned: ::1
+ERROR: 2025/01/19 20:37:55 logger.go:42: IP banned: ::1
+ERROR: 2025/01/19 20:37:55 logger.go:42: IP banned: ::1
+INFO: 2025/01/19 20:50:07 logger.go:36: List updated successfully
+ERROR: 2025/01/19 20:50:15 logger.go:42: Email is denied by list for email: deny@domain.tld
+ERROR: 2025/01/19 20:50:16 logger.go:42: Email is denied by list for email: deny@domain.tld
+ERROR: 2025/01/19 20:50:16 logger.go:42: Email is denied by list for email: deny@domain.tld
+ERROR: 2025/01/19 20:50:17 logger.go:42: Email is denied by list for email: deny@domain.tld
+ERROR: 2025/01/19 20:50:17 logger.go:42: Email is denied by list for email: deny@domain.tld
+ERROR: 2025/01/19 20:50:17 logger.go:42: IP banned: ::1
+ERROR: 2025/01/19 20:50:18 logger.go:42: Email is denied by list for email: deny@domain.tld
+ERROR: 2025/01/19 20:50:19 logger.go:42: Email is denied by list for email: deny@domain.tld
+INFO: 2025/01/19 20:57:36 logger.go:36: List updated successfully
+ERROR: 2025/01/19 20:57:49 logger.go:42: Email is denied by list for email: deny@domain.tld
+INFO: 2025/01/19 20:58:01 logger.go:36: Email is valid by list for email: g.f.f@gmx.at
+INFO: 2025/01/19 20:58:10 logger.go:36: Email is valid by list for email: g.f.f@gmx.net
+INFO: 2025/01/19 20:58:19 logger.go:36: SMTP-Response for email:  g.f.f@orf.at 554-mx1.orf.at
+554 Your access to this mail system has been rejected due to the sending MTA's poor reputation. If you believe that this failure is in error, please contact the intended recipient via alternate means.
+
+ERROR: 2025/01/19 20:58:19 logger.go:42: Your access to this mail system has been rejected due to the sending MTA's poor reputation
+
+INFO: 2025/01/19 20:58:19 logger.go:36: Email validation successful for email: g.f.f@orf.at
+INFO: 2025/01/19 20:58:28 logger.go:36: Email validation successful for email: g.f.f@orf.at
+INFO: 2025/01/19 20:58:29 logger.go:36: Email validation successful for email: g.f.f@orf.at
+INFO: 2025/01/19 20:58:31 logger.go:36: Email validation successful for email: g.f.f@orf.at
+INFO: 2025/01/19 20:58:31 logger.go:36: Email validation successful for email: g.f.f@orf.at
+INFO: 2025/01/19 20:58:35 logger.go:36: SMTP-Response for email:  g.f.f@orf.at 554-mx1.orf.at
+554 Your access to this mail system has been rejected due to the sending MTA's poor reputation. If you believe that this failure is in error, please contact the intended recipient via alternate means.
+
+ERROR: 2025/01/19 20:58:35 logger.go:42: Your access to this mail system has been rejected due to the sending MTA's poor reputation
+
+INFO: 2025/01/19 20:58:35 logger.go:36: Email validation successful for email: g.f.f@orf.at

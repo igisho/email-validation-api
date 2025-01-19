@@ -1,0 +1,23 @@
+{
+  "smtp_email": "noreply@email-validation-api.io",
+  "regex": "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$",
+  "cache_enabled": true,
+  "cache_max_time_mx": 3600,
+  "cache_max_time_smtp": 3600,
+  "cache_max_time_email": 3600,
+  "logging_enabled": true,
+  "api_key": null,
+  "requests_per_minute": 60,
+  "fail2ban_duration": 600,
+  "fail2ban_allow": [],
+  "list_name": "310-deny-domain-disposable.txt",
+  "list_update_interval": 86400,
+  "list_source_urls": [
+    "https://raw.githubusercontent.com/disposable/disposable-email-domains/master/domains_strict.txt",
+    "https://raw.githubusercontent.com/7c/fakefilter/refs/heads/main/txt/data.txt",
+    "https://gist.githubusercontent.com/adamloving/4401361/raw/e81212c3caecb54b87ced6392e0a0de2b6466287/temporary-email-address-Domains",
+    "https://raw.githubusercontent.com/wesbos/burner-email-providers/refs/heads/master/emails.txt",
+    "https://raw.githubusercontent.com/unkn0w/disposable-email-domain-list/refs/heads/main/domains.txt",
+    "https://raw.githubusercontent.com/disposable-email-domains/disposable-email-domains/refs/heads/main/disposable_email_blocklist.conf"
+  ]
+}
