@@ -2,9 +2,12 @@ version: "3.8"
 
 services:
   eva:
-    build: .
+    container_name: "email-validation-api"
+    image: "gf78/email-validation-api:latest"
     ports:
       - "80:80"
+    environment:
+      - TZ=Europe/Vienna
     volumes:
       - ./config:/root/config
       - ./logs:/root/logs

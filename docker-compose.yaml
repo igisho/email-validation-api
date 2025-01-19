@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  eva:
+    container_name: "email-validation-api"
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - TZ=Europe/Vienna
+    volumes:
+      - ./config:/root/config
+      - ./logs:/root/logs
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "wget",
+          "--spider",
+          "--quiet",
+          "--tries=1",
+          "--timeout=5",
+          "http://localhost:80/",
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

@@ -1,10 +1,10 @@
 # Stage 1: Build the Go binary
-FROM golang:1.18-alpine as builder
+FROM golang:1.18-alpine AS builder
 
 WORKDIR /eva
 
 # Install dependencies
-RUN apk add --no-cache git
+RUN apk add --no-cache git tzdata
 
 # Copy go.mod and go.sum files
 COPY go.mod go.sum ./
