@@ -11,7 +11,7 @@ GET /name@domain.tld
 {
 email: "name@domain.tld",
 valid: true,
-message: "Emailname@domain.tld is valid",
+message: "Email name@domain.tld is valid",
 cached: false
 }
 `
