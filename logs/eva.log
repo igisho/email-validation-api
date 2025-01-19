@@ -43,3 +43,9 @@ INFO: 2025/01/19 20:58:35 logger.go:36: SMTP-Response for email:  g.f.f@orf.at 5
 ERROR: 2025/01/19 20:58:35 logger.go:42: Your access to this mail system has been rejected due to the sending MTA's poor reputation
 
 INFO: 2025/01/19 20:58:35 logger.go:36: Email validation successful for email: g.f.f@orf.at
+INFO: 2025/01/19 20:54:27 logger.go:36: List updated successfully
+ERROR: 2025/01/19 20:54:41 logger.go:42: Email is denied by list for email: info@fischer.at
+INFO: 2025/01/19 20:54:58 logger.go:36: SMTP-Response idfdsafdsfa@fischer.at 250 DU6PEPF00009525.mail.protection.outlook.com Hello [62.178.186.156]
+
+INFO: 2025/01/19 20:54:58 logger.go:36: SMTP check successful for email: idfdsafdsfa@fischer.at
+INFO: 2025/01/19 20:54:58 logger.go:36: Email validation successful for email: idfdsafdsfa@fischer.at
