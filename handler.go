@@ -9,11 +9,12 @@ import (
 
 // Response represents the structure of our JSON response.
 type Response struct {
-    Email   string `json:"email"`
-    Valid   bool   `json:"valid"`
-    Message string `json:"message"`
-    Error   string `json:"error,omitempty"`
-    Cached  bool   `json:"cached"`
+    Email   string            `json:"email"`
+    Valid   bool              `json:"valid"`
+    Message string            `json:"message"`
+    Error   string            `json:"error,omitempty"`
+    Cached  bool              `json:"cached"`
+    Checks  map[string]bool   `json:"checks,omitempty"`
 }
 
 // handler handles the incoming requests and returns validation results.
