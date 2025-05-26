@@ -79,13 +79,13 @@ func handler(w http.ResponseWriter, r *http.Request) {
     }
 
     // Validate email with all checks.
-    isValid, message, errMessage, cached := validateEmail(email, noCache)
+    isValid, message, errMessage, cached, checks := validateEmail(email, noCache)
     if isValid {
         w.WriteHeader(http.StatusOK)
-        json.NewEncoder(w).Encode(Response{Email: email, Valid: true, Message: message, Cached: cached})
+        json.NewEncoder(w).Encode(Response{Email: email, Valid: true, Message: message, Cached: cached, Checks:  checks})
     } else {
         w.WriteHeader(http.StatusBadRequest)
-        json.NewEncoder(w).Encode(Response{Email: email, Valid: false, Message: message, Error: errMessage, Cached: cached})
+        json.NewEncoder(w).Encode(Response{Email: email, Valid: false, Message: message, Error: errMessage, Cached: cached, Checks:  checks})
         trackFailedLogin(r)
     }
 }
